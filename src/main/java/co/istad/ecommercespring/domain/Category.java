@@ -23,11 +23,11 @@ public class Category {
     private String description;
     private String icon;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private Boolean isDeleted;
 
     @ManyToOne
-    private Category parenCategory;
+    private Category parentCategory;
 
     @OneToMany(mappedBy = "category")
     private List<Product> products;
