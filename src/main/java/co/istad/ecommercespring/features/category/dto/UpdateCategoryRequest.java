@@ -1,4 +1,4 @@
-package co.istad.ecommercespring.dto;
+package co.istad.ecommercespring.features.category.dto;
 
 import jakarta.validation.constraints.Size;
 

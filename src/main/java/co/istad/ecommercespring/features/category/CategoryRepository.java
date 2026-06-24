@@ -1,6 +1,5 @@
-package co.istad.ecommercespring.repository;
+package co.istad.ecommercespring.features.category;
 
-import co.istad.ecommercespring.domain.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

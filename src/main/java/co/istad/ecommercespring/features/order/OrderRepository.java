@@ -1,6 +1,5 @@
-package co.istad.ecommercespring.repository;
+package co.istad.ecommercespring.features.order;
 
-import co.istad.ecommercespring.domain.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

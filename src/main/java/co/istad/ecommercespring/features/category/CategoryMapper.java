@@ -1,9 +1,8 @@
-package co.istad.ecommercespring.mapper;
+package co.istad.ecommercespring.features.category;
 
-import co.istad.ecommercespring.domain.Category;
-import co.istad.ecommercespring.dto.CategoryResponse;
-import co.istad.ecommercespring.dto.CreateCategoryRequest;
-import co.istad.ecommercespring.dto.UpdateCategoryRequest;
+import co.istad.ecommercespring.features.category.dto.CategoryResponse;
+import co.istad.ecommercespring.features.category.dto.CreateCategoryRequest;
+import co.istad.ecommercespring.features.category.dto.UpdateCategoryRequest;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

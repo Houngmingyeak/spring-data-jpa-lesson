@@ -1,12 +1,8 @@
-package co.istad.ecommercespring.service.impl;
+package co.istad.ecommercespring.features.category;
 
-import co.istad.ecommercespring.domain.Category;
-import co.istad.ecommercespring.dto.CategoryResponse;
-import co.istad.ecommercespring.dto.CreateCategoryRequest;
-import co.istad.ecommercespring.dto.UpdateCategoryRequest;
-import co.istad.ecommercespring.mapper.CategoryMapper;
-import co.istad.ecommercespring.repository.CategoryRepository;
-import co.istad.ecommercespring.service.CategoryService;
+import co.istad.ecommercespring.features.category.dto.CategoryResponse;
+import co.istad.ecommercespring.features.category.dto.CreateCategoryRequest;
+import co.istad.ecommercespring.features.category.dto.UpdateCategoryRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

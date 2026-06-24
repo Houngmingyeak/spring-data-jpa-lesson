@@ -1,8 +1,8 @@
-package co.istad.ecommercespring.service;
+package co.istad.ecommercespring.features.category;
 
-import co.istad.ecommercespring.dto.CategoryResponse;
-import co.istad.ecommercespring.dto.CreateCategoryRequest;
-import co.istad.ecommercespring.dto.UpdateCategoryRequest;
+import co.istad.ecommercespring.features.category.dto.CategoryResponse;
+import co.istad.ecommercespring.features.category.dto.CreateCategoryRequest;
+import co.istad.ecommercespring.features.category.dto.UpdateCategoryRequest;
 import org.springframework.data.domain.Page;
 
 import java.util.List;

@@ -1,5 +1,6 @@
-package co.istad.ecommercespring.domain;
+package co.istad.ecommercespring.features.category;
 
+import co.istad.ecommercespring.features.product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,4 +32,5 @@ public class Category {
 
     @OneToMany(mappedBy = "category")
     private List<Product> products;
+
 }

@@ -1,7 +1,7 @@
-package co.istad.ecommercespring.domain;
+package co.istad.ecommercespring.features.order;
 
+import co.istad.ecommercespring.features.product.Product;
 import jakarta.persistence.*;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

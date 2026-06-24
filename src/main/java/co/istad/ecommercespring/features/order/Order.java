@@ -1,4 +1,4 @@
-package co.istad.ecommercespring.domain;
+package co.istad.ecommercespring.features.order;
 
 import jakarta.persistence.*;
 import lombok.Getter;
