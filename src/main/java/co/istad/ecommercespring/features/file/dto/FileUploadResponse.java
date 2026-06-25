@@ -10,6 +10,7 @@ import lombok.Builder;
 public record FileUploadResponse(
 
         String name,
+        String extension,
         String caption,
         Long size,
         String mediaType,

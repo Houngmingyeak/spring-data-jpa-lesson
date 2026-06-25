@@ -19,12 +19,16 @@ public class FileUpload {
     @Column(nullable = false, unique = true)
     private String name;
 
+    @Column(nullable = false,length = 255)
+     private String extension;
+
     @Column(length = 255)
     private String caption; //describe the meaning of picture
 
     private Long size;
 
     private String mediaType;
+
 
 
 }

@@ -1,6 +1,7 @@
 package co.istad.ecommercespring.features.file;
 
 import co.istad.ecommercespring.features.file.dto.FileUploadResponse;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -10,8 +11,11 @@ public interface FileUploadService {
 
     FileUploadResponse upload (MultipartFile file);
 
-    List<FileUploadResponse> uploadMultiple (MultipartFile[] files);
+    List<FileUploadResponse> uploadMultiple (List<MultipartFile> files);
 
     void deleteByName(String name);
 
+    Page<FileUploadResponse> findAll(int pageNumber, int pageSize);
+
+    FileUploadResponse findByName(String name);
 }
