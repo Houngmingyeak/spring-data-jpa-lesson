@@ -28,13 +28,15 @@ public class Order {
     private String remark;
     @Column(nullable = false)
     private Boolean status;
-    @Column(nullable = false)
-    private LocalDateTime createdAt;
+//    @Column(nullable = false)
+//    private LocalDateTime createdAt;
+
+    private LocalDateTime orderedAt;
 
     @Column(nullable = false)
     private Boolean isDeleted;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderLine> orderLines;
 
 }
