@@ -23,8 +23,6 @@ public class ProductServiceImpl implements ProductService{
     private final CategoryRepository categoryRepository;
     private final ProductMapper productMapper;
 
-
-
     @Override
     public Page<ProductResponse> findAll(int pageNumber, int pageSize) {
         Sort sortById = Sort.by(Sort.Direction.DESC, "id");

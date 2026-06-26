@@ -73,9 +73,11 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Page<OrderResponse> findAll(int page, int size) {
-        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "orderedAt"));
-        return orderRepository.findAllByIsDeletedFalse(pageable)
-                .map(orderMapper::mapOrderToOrderResponse);
+        Sort sortById = Sort.by(Sort.Direction.DESC, "id");
+        PageRequest pageRequest = PageRequest.of(page, size, sortById);
+        Page<Order> orders = orderRepository.findAll(pageRequest);
+
+        return orders.map(orderMapper::mapOrderToOrderResponse);
     }
 
     @Override
@@ -117,7 +119,7 @@ public class OrderServiceImpl implements OrderService {
                         HttpStatus.NOT_FOUND,
                         "Order not found with id: " + id
                 ));
-        order.setStatus(false);
+        order.setStatus(true);
         orderRepository.save(order);
 
     }
